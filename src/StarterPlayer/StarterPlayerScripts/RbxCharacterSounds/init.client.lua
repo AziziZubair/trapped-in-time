@@ -5,11 +5,6 @@ contentLoader = game:GetService("ContentProvider")
 local pass, fail = pcall(function()
 	contentLoader:PreloadAsync({"rbxassetid://15938706043"})
 end)
-if fail then
-		print(fail)
-	else
-		print("done")
-end
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
